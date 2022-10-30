@@ -1,19 +1,41 @@
 {
   "name": "file-ext",
   "version": "1.0.0",
-  "description": "",
+  "description": "Receives the extension or mimeType of a filename or path.",
+  "author": "orlandobricenob <orlando.briceno.blanco@gmail.com> (https://github.com/orlandobricenob)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "docs": "jsdoc index.js"
   },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js",
+    "index.min.js"
+  ],
+  "keywords": [
+    "file",
+    "extension",
+    "extname",
+    "ext",
+    "file-ext",
+    "file extension"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OrlandoBricenoB/file-ext.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OrlandoBricenoB/file-ext/issues"
   },
-  "homepage": "https://github.com/OrlandoBricenoB/file-ext#readme"
+  "homepage": "https://github.com/OrlandoBricenoB/file-ext#readme",
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  },
+  "dependencies": {
+    "mime-types": "^2.1.35"
+  }
 }
