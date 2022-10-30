@@ -1,5 +1,5 @@
 {
-  "name": "file-ext",
+  "name": "@jo-sword/file-ext",
   "version": "1.0.0",
   "description": "Receives the extension or mimeType of a filename or path.",
   "author": "orlandobricenob <orlando.briceno.blanco@gmail.com> (https://github.com/orlandobricenob)",
