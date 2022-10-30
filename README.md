@@ -1,5 +1,5 @@
 # File Ext
-[![](https://img.shields.io/npm/v/file-ext.svg?style=flat)](https://www.npmjs.org/package/file-ext) [![](https://img.shields.io/npm/dm/file-ext.svg)](https://www.npmjs.org/package/file-ext) [![](https://api.travis-ci.org/orlandobricenob/file-ext.svg?style=flat)](https://travis-ci.org/orlandobricenob/file-ext)
+[![](https://img.shields.io/npm/v/file-ext.svg?style=flat)](https://www.npmjs.org/package/@jo-sword/file-ext) [![](https://img.shields.io/npm/dm/file-ext.svg)](https://www.npmjs.org/package/@jo-sword/file-ext)
 > Receives the extension or mimeType of a filename or path.
 
 Differences to [`path.extname`](https://nodejs.org/api/path.html#path_path_extname_path):
@@ -11,12 +11,12 @@ Differences to [`path.extname`](https://nodejs.org/api/path.html#path_path_extna
 
 ## Installation
 ```
-$ npm install --save file-ext
+$ npm install --save @jo-sword/file-ext
 ```
 
 ## Example
 ```js
-const fileExt = require('file-ext')
+const fileExt = require('@jo-sword/file-ext')
 
 fileExt('assets/dog.png')    //=> 'png'
 fileExt('file.zip')          //=> 'zip'
