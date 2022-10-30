@@ -1,5 +1,5 @@
 # File Ext
-[![](https://img.shields.io/npm/v/@jo-sword/file-ext.svg?style=flat)](https://www.npmjs.org/package/@jo-sword/file-ext) [![](https://img.shields.io/npm/dm/@jo-sword/file-ext.svg)](https://www.npmjs.org/package/@jo-sword/file-ext)
+[![](https://img.shields.io/npm/v/@jo-sword/file-ext.svg?style=flat)](https://www.npmjs.org/package/@jo-sword/file-ext) [![](https://img.shields.io/npm/dm/file-ext.svg)](https://www.npmjs.org/package/@jo-sword/file-ext)
 > Receives the extension or mimeType of a filename or path.
 
 Differences to [`path.extname`](https://nodejs.org/api/path.html#path_path_extname_path):
