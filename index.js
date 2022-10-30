@@ -6,29 +6,29 @@ const mime = require('mime-types')
  * Our main object
  * @constructor
  * @param {string} filename - The filename or path.
- * @param {object} opt - Options of the FileExt.
+ * @param {object} options - Options of the FileExt.
  */
-const FileExt = (filename, opt) => {
+const FileExt = (filename, options) => {
   const ext = {
     extName: path.extname(filename)
   }
-  if (!opt) opt = {}
+  if (!options) options = {}
   if (ext.extName === '') ext.extName = filename
 
   // * Remove dot of extName
   ext.extName = ext.extName.startsWith('.') ? ext.extName.replace('.', '') : ext.extName
 
   // * Include mimeTypes
-  if (opt.withType) {
+  if (options.withType) {
     ext.type = mime.contentType(ext.extName)
   }
 
   // * Convert toLowerCase
-  if (!opt.keepCase) {
+  if (!options.keepCase) {
     ext.extName = ext.extName.toLowerCase()
   }
 
-  return !opt.withType ? ext.extName : ext
+  return !options.withType ? ext.extName : ext
 }
 
 module.exports = FileExt
