@@ -1,7 +1,6 @@
 /*! file-ext v1.0.0 | (c) orlandobricenob | ISC License */
 const path = require('path')
 const mime = require('mime-types')
-const isEmptyObject = require('./utils/isEmptyObject')
 
 /**
  * Our main object
@@ -29,7 +28,7 @@ const FileExt = (filename, opt) => {
     ext.extName = ext.extName.toLowerCase()
   }
 
-  return isEmptyObject(opt) ? ext.extName : ext
+  return !opt.withType ? ext.extName : ext
 }
 
 module.exports = FileExt
