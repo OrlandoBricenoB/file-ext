@@ -22,6 +22,14 @@ describe('Testing FileExt', () => {
       assert.equal(fileExt('md'), 'md')
     })
   })
+  describe('Get extension with invalid keepCase: Jo-Sword', () => {
+    it('should return Jo-Sword', () => {
+      assert.equal(
+        fileExt('.Jo-Sword', { keepCase: true }),
+        'Jo-Sword'
+      )
+    })
+  })
   describe('Get from filename with mimeType: isEmptyObject.js', () => {
     it('should return { extName: "js", type: "application/javascript; charset=utf-8" }', () => {
       assert.equal(
