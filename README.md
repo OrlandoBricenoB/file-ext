@@ -8,6 +8,7 @@ Differences to [`path.extname`](https://nodejs.org/api/path.html#path_path_extna
 * Treats extensionless files as extension (`Makefile` => `makefile`)
 * Doesn't include the dot in the extension (`package.json` => `json`)
 * Returns lowercase by default (`LICENCE` => `licence`)
+* Can get mimeType optionally
 
 ## Installation
 ```
